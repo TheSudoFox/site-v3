@@ -1,0 +1,20 @@
+version: '3.2'
+ 
+services:
+  web_app:
+    image: web_app:latest
+    ports:
+      - "80:80"
+      - "443:443"
+    restart: always
+
+  letsencrypt:
+    image: letsencrypt:latest
+    command: /bin/true
+    volumes:
+      - letsencrypt_certs:/etc/letsencrypt
+      - letsencrypt_www:/var/www/letsencrypt
+
+volumes:
+  letsencrypt_certs: ~
+  letsencrypt_www: ~
