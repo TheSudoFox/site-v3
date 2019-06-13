@@ -15,5 +15,6 @@ FROM nginx as production-stage
 COPY --from=build-stage /app/docker/nginx/conf.d/prod-site.conf /etc/nginx/conf.d/site.conf
 COPY --from=build-stage /app/main_site/dist /usr/share/nginx/html/sites/ethanfox.me
 COPY --from=build-stage /app/blog/public /usr/share/nginx/html/sites/blog.ethanfox.me
+COPY /opt/ssl_certs/* /opt/ssl_certs
 RUN echo 127.0.0.1 localhost blog.localhost >> /etc/hosts
 EXPOSE 80
