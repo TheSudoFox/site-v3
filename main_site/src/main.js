@@ -5,7 +5,6 @@ import VueRouter from 'vue-router'
 
 // Custom components
 import Skills from './components/skills.vue'
-import Index from './components/index.vue'
 import About from './components/about.vue'
 import Work from './components/work.vue'
 
@@ -32,7 +31,6 @@ Vue.use(VueRouter);
 
 // vue-router Config
 const routes = [
-  { path: '/', component: Index },
   { path: '/skills', component: Skills },
   { path: '/about', component: About },
   { path: '/work', component: Work },
