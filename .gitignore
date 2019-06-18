@@ -1,4 +1,6 @@
 validation/*
 ssl_certs/*
 main_site/node_modules/*
+main_site/dist/*
+blog/public/*
 blog/node_modules/*
