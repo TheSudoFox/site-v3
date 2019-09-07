@@ -12,6 +12,27 @@
     </div>
   </div>
 </template>
+<script>
+export default {
+  data: function () {
+    return {
+      title: 'Landing'
+    }
+  },
+  // Usage with context the component
+  head: {
+    // To use "this" in the component, it is necessary to return the object through a function
+    title: function () {
+      return {
+        inner: this.title
+      }
+    },
+    meta: [
+      { name: 'description', content: 'The homebase for all my thoughts', id: 'desc' }
+    ]
+  }
+}
+</script>
 <style>
 .mainLogo{
   max-height: 300px;

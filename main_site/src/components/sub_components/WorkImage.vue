@@ -1,7 +1,7 @@
 <template>
   <div class="has-text-centered project-image">
     <a :href="`http://ethanfox.me/img/projects/${picture}`">
-      <img style="max-height: 300px;" :src="`/img/projects/${picture}`"></img>
+      <img style="max-height: 300px;" :src="`/img/projects/${picture}`"/>
     </a>
     <p class="is-size-7">{{description}}</p>
     <p class="is-size-7"><a :href="`http://ethanfox.me/img/projects/${picture}`">Image link</a></p>

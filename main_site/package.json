@@ -9,7 +9,8 @@
   },
   "dependencies": {
     "@vue/cli-service-global": "^3.8.0",
-    "vue": "^2.6.6"
+    "vue": "^2.6.6",
+    "vue-head": "^2.1.2"
   },
   "devDependencies": {
     "@fortawesome/fontawesome-free-solid": "^5.0.13",

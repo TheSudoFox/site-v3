@@ -48,7 +48,7 @@ export default {
   },
   methods: {
     ...mapMutations([
-    'toggleMenu',
+      'toggleMenu',
     ]),
     toggleMenu (){
       this.$store.commit('toggleMenu', !this.$store.state.toggleMenu)
@@ -110,11 +110,11 @@ body {
   width: 100%;
   height: 100vh;
   font-size: 125%;
-//  background-color: #f7faff;
+  //  background-color: #f7faff;
 }
 
 #app {
-//  background-color: #f7faff;
+  //  background-color: #f7faff;
 }
 
 .blog-container h1{ 

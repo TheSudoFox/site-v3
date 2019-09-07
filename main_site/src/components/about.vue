@@ -29,15 +29,22 @@
 
 <script>
 export default {
-  name: 'AboutMe',
-  head: {
-    bodyAttrs: {
-      class: 'aboutpage'
+  data: function () {
+    return {
+      title: 'About'
     }
   },
-  data () {
-    return {
-    }
+  // Usage with context the component
+  head: {
+    // To use "this" in the component, it is necessary to return the object through a function
+    title: function () {
+      return {
+        inner: this.title
+      }
+    },
+    meta: [
+      { name: 'description', content: 'The homebase for all my thoughts', id: 'desc' }
+    ]
   }
 }
 </script>
