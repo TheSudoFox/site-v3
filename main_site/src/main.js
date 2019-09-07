@@ -33,10 +33,10 @@ Vue.use(VueRouter);
 
 // vue-router Config
 const routes = [
-  { path: '/', component: Home },
-  { path: '/skills', component: Skills },
-  { path: '/about', component: About },
-  { path: '/work', component: Work },
+  { path: '/', meta: {title: 'Ethan\'s Home', metaTags: [name: 'description', content: 'Land safely here'], component: Home },
+  { path: '/skills', meta: {title: 'My Skills', metaTags: [name: 'description', content: 'Performance metrics'], component: Skills },
+  { path: '/about', meta: {title: 'About Me', metaTags: [name: 'description', content: 'My life, summarized'], component: About },
+  { path: '/work', meta: {title: 'Work Experience', metaTags: [name: 'description', content: 'Places I\'ve been'], component: Work },
 ]
 
 const router = new VueRouter({
