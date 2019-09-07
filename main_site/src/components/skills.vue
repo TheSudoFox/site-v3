@@ -7,7 +7,7 @@
             <h1 class="title is-1 has-text-primary">My Skills</h1>
             <h4 class="subtitle is-4 has-text-primary-invert">focused on bringing ideas to life</h4>
             <div class="container" style="padding: 1rem 0 1rem 0;">
-              <a href="/EthanFoxResume.pdf">
+              <a href="https://f002.backblazeb2.com/file/ethanfox-site/EthanFoxResume.pdf" target="_blank">
                 <button class="button is-light">Resume</button>
               </a>
             </div>
