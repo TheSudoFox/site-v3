@@ -12,7 +12,7 @@ WORKDIR /app
 
 # Production stage
 FROM nginx as production-stage
-COPY --from=build-stage /app/docker/nginx/conf.d/dev-site.conf /etc/nginx/conf.d/site.conf
+COPY --from=build-stage /app/docker/nginx/conf.d/site.conf /etc/nginx/conf.d/site.conf
 RUN rm /etc/nginx/conf.d/default.conf
 COPY --from=build-stage /app/main_site/dist /usr/share/nginx/html/sites/ethanfox.me
 COPY --from=build-stage /app/blog/public /usr/share/nginx/html/sites/blog.ethanfox.me

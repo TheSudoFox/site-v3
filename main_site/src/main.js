@@ -4,6 +4,7 @@ import Vuex from 'vuex'
 import VueRouter from 'vue-router'
 
 // Custom components
+import Home from './components/home.vue'
 import Skills from './components/skills.vue'
 import About from './components/about.vue'
 import Work from './components/work.vue'
@@ -24,13 +25,15 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 Vue.component('font-awesome-icon', FontAwesomeIcon);
 
 // Vue Config
-Vue.config.productionTip = false
-Vue.config.runtimeCompiler = true
+Vue.config.productionTip = false;
+Vue.config.runtimeCompiler = true;
+Vue.config.devtools = true;
 Vue.use(Vuex);
 Vue.use(VueRouter);
 
 // vue-router Config
 const routes = [
+  { path: '/', component: Home },
   { path: '/skills', component: Skills },
   { path: '/about', component: About },
   { path: '/work', component: Work },

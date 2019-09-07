@@ -29,7 +29,7 @@
           <router-link class="navbar-item" to="/work">
             Work
           </router-link>
-          <a href="http://blog.localhost" class="navbar-item">
+          <a href="http://blog.ethanfox.me" class="navbar-item">
             Blog
           </a>
         </div>
@@ -164,5 +164,13 @@ ol {
 
 .box {
   box-shadow: none;
+}
+
+.ecolor {
+  color: #1565c0;
+}
+
+.fcolor {
+  color: #42a5f5;
 }
 </style>
