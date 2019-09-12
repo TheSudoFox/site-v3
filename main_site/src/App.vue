@@ -1,9 +1,10 @@
 <template>
   <div id="app">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <nav class="navbar" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
         <router-link to="/" class="navbar-item">
-          <img src="./assets/mylogo.png" alt="" width="21" height="30" max-height="250">
+          <img src="./assets/mylogo.png" alt="" max-height="350">
         </router-link>
 
         <div class="navbar-burger burger" @click="toggleMenu" data-target="navMenu">
@@ -171,6 +172,6 @@ ol {
 }
 
 .fcolor {
-  color: #42a5f5;
+  color: #00C2FF;
 }
 </style>

@@ -93,7 +93,7 @@
               </div>
             </div>
             <div class="media-right">
-              <figure class="image"><img class="image is-128x128" src="https://upload.wikimedia.org/wikipedia/commons/7/73/Sketch_logo_frame.svg" alt="Image"></figure>
+              <figure class="image"><img class="image is-128x128" src="https://www.sketch.com/images/pages/press/sketch-press-kit/app-icons/sketch-mac-icon@2x.png" alt="Image"></figure>
             </div>
           </article>
         </div>
