@@ -4,12 +4,12 @@ WORKDIR /app
 COPY . .
 WORKDIR ./blog
 RUN npm install
-RUN npm run build
 RUN npm audit fix
+RUN npm run build
 WORKDIR ../main_site
 RUN npm install && npm rebuild node-sass
-RUN npm run build
 RUN npm audit fix
+RUN npm run build
 WORKDIR /app
 
 # Production stage
