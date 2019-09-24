@@ -1,1 +1,3 @@
-# ethanfox.me_v2
+# Site v3
+
+New blog post coming soon explaining the journey here.
